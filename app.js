@@ -4,11 +4,14 @@ let score = 0;
 const questionElement = document.getElementById('question');
 const optionsContainer = document.getElementById('options');
 const nextButton = document.getElementById('next-btn');
+const againButton = document.getElementById('again-btn');
 const scoreElement = document.getElementById('score');
+
 
 function loadQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.innerText = currentQuestion.question;
+    scoreElement.hidden=true;
 
     optionsContainer.innerHTML = "";
     currentQuestion.options.forEach((option, index) => {
@@ -33,7 +36,7 @@ function checkAnswer(selectedOption, correctAnswer) {
         endQuiz();
     }
 
-    updateScore();
+    
 }
 
 function updateScore() {
@@ -43,14 +46,22 @@ function updateScore() {
 function endQuiz() {
     questionElement.innerText = "Quiz completed!";
     optionsContainer.innerHTML = "";
-    nextButton.disabled = true;
+    nextButton.hidden = true;
+    scoreElement.hidden=false;
+    updateScore();
 }
 
 function nextQuestion() {
     currentQuestionIndex++;
     loadQuestion();
-    nextButton.disabled = true;
+   
     
+}
+function restart() {
+    currentQuestionIndex = 0;
+     score = 0;
+     loadQuestion();
+     nextButton.hidden = false;
 }
 
 loadQuestion();
