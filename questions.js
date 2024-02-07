@@ -1,28 +1,53 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Paris", "Berlin", "London", "Madrid"],
-        correctAnswer: "Paris"
+      question: "Which of the following attributes is used to add link to any element?",
+      options: [
+        "link",
+        "href",
+        "ref",
+        "newref"
+      ],
+       correctAnswer: "href"
+    },
+      {
+      question: "What does HTML stand for?",
+      options: [
+        "Hyper Text Markup Language",
+        "Hyper Text Preprocessor",
+        "Hyper Text Multiple Language",
+        "Hyper Tool Multi Language"
+      ],
+      correctAnswer: "Hyper Text Markup Language"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Earth", "Mars", "Jupiter", "Venus"],
-        correctAnswer: "Mars"
+      question: "What does PHP stand for?",
+      options: [
+        "Hypertext Preprocessor",
+        "Hypertext Programming",
+        "Hypertext Preprogramming",
+        "Hometext Preprocessor"
+      ],
+      correctAnswer: "Hypertext Preprocessor"
+    },
+      {
+      question: "What does CSS stand for?",
+      options: [
+        "Common Style Sheet",
+        "Colorful Style Sheet",
+        "Computer Style Sheet",
+        "Cascading Style Sheet"
+      ],
+      correctAnswer: "Cascading Style Sheet"
     },
     {
-        question: "Name the Father of the Indian Constitution?",
-        options: ["Gandhiji", "Nehru", "Dr.Ambedkar", "Bhagat Singh"],
-        correctAnswer: "Dr.Ambedkar"
-    },
-    {
-        question: "The Central Rice Research Station is Situated in?",
-        options: ["Chennai", "Cuttack", "Banglore", "Quilon"],
-        correctAnswer: "Cuttack"
-    },
-    {
-        question: "The country that has the highest in Barley Production?",
-        options: ["China", "India", "Russia", "France"],
-        correctAnswer: "Russia"
-    },
-    // Add more questions here
-];
+      question: "What does JSON stand for?",
+      options: [
+        "Java object notation",
+        "Javascript object notation",
+        "Java notation",
+        "Javascript  notation"
+      ],
+      correctAnswer: "Javascript object notation"
+    }
+      
+  ];
